@@ -1,4 +1,4 @@
-# 🚀 Automação de Testes para API Fake Store
+# 🚀 Automação de Testes para API E-commerce
 
 Este repositório apresenta uma solução completa para automação de testes de API focada na **API Fake Store**. Utilizamos o **Postman** para a criação dos testes, o **Newman** para execução via linha de comando e o **GitHub Actions** para garantir a Integração Contínua (CI).
 
