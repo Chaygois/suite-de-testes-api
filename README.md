@@ -1,20 +1,22 @@
-🚀 Automação de Testes para API Fake Store
-Este repositório apresenta uma solução completa para automação de testes de API focada na API Fake Store. Utilizamos o Postman para a criação dos testes, o Newman para execução via linha de comando e o GitHub Actions para garantir a Integração Contínua (CI).
+# 🚀 Automação de Testes para API Fake Store
 
-✨ Funcionalidades
-Testes de API Robustos: Uma coleção abrangente de testes desenvolvida no Postman para validar os endpoints da API Fake Store, garantindo a qualidade e o correto funcionamento.
+Este repositório apresenta uma solução completa para automação de testes de API focada na **API Fake Store**. Utilizamos o **Postman** para a criação dos testes, o **Newman** para execução via linha de comando e o **GitHub Actions** para garantir a Integração Contínua (CI).
 
-Execução Local Flexível: Capacidade de executar todos os testes localmente via Newman, com a opção de utilizar variáveis de ambiente para diferentes cenários.
+---
 
-Relatórios Detalhados: Geração de relatórios HTML completos e de fácil leitura, permitindo uma análise profunda dos resultados dos testes e identificação rápida de falhas.
+## ✨ Funcionalidades
 
-Integração Contínua (CI): Um workflow configurado no GitHub Actions que automatiza a execução dos testes em cada push e pull request, assegurando que a cada alteração o projeto continue estável.
+* **Testes de API Robustos:** Uma coleção abrangente de testes desenvolvida no Postman para validar os endpoints da API Fake Store, garantindo a qualidade e o correto funcionamento.
+* **Execução Local Flexível:** Capacidade de executar todos os testes localmente via Newman, com a opção de utilizar variáveis de ambiente para diferentes cenários.
+* **Relatórios Detalhados:** Geração de relatórios HTML completos e de fácil leitura, permitindo uma análise profunda dos resultados dos testes e identificação rápida de falhas.
+* **Integração Contínua (CI):** Um workflow configurado no GitHub Actions que automatiza a execução dos testes em cada push e pull request, assegurando que a cada alteração o projeto continue estável.
+* **Gerenciamento de Dependências:** Uso do `package.json` para simplificar a instalação e execução das dependências necessárias para os testes.
 
-Gerenciamento de Dependências: Uso do package.json para simplificar a instalação e execução das dependências necessárias para os testes.
+---
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
+
 A estrutura do projeto foi pensada para facilitar a organização e manutenção:
-
 SUITE-DE-TESTES-API/
 ├── postman/
 │   ├── fake-store-api-qa-automation.postman_collection.json # Coleção Postman com os testes da API
@@ -27,22 +29,27 @@ SUITE-DE-TESTES-API/
 ├── README.md                                              # Documentação principal do projeto
 ├── package.json                                           # Configuração das dependências e scripts npm
 └── .gitignore                                             # Arquivos ignorados pelo Git
-💻 Como Executar os Testes Localmente
+
+
+---
+
+## 💻 Como Executar os Testes Localmente
+
 Siga os passos abaixo para rodar os testes em sua máquina.
 
-Requisitos
+### Requisitos
+
 Certifique-se de ter os seguintes softwares instalados:
 
-Node.js: Versão recomendada: 14+ (inclui npm). Baixe em: nodejs.org.
+* **Node.js**: Versão recomendada: 14+. Inclui o `npm`. Baixe em: [nodejs.org](https://nodejs.org/).
+* **Newman**: Uma ferramenta de linha de comando do Postman. Pode ser instalado globalmente ou localmente.
 
-Newman: Uma ferramenta de linha de comando do Postman. Pode ser instalado globalmente ou localmente.
+### Passo 1: Clonar o Repositório
 
-Passo 1: Clonar o Repositório
 Primeiro, clone este repositório para sua máquina local e navegue até o diretório do projeto:
 
-Bash
-
-git clone https://github.com/seu-usuario/SUITE-DE-TESTES-API.git
+```bash
+git clone [https://github.com/seu-usuario/SUITE-DE-TESTES-API.git](https://github.com/seu-usuario/SUITE-DE-TESTES-API.git)
 cd SUITE-DE-TESTES-API
 Passo 2: Instalar Dependências
 Se você não tiver o Newman instalado globalmente, o package.json já está configurado para instalá-lo localmente como uma dependência de desenvolvimento.
@@ -76,7 +83,7 @@ npm test
 Este comando executa exatamente o mesmo comando Newman descrito acima, de forma mais concisa.
 
 Passo 4: Verificar o Relatório
-Após a execução, um relatório HTML detalhado será gerado no diretório reports/.
+Após a execução, um relatório HTML detalhado será gerado no diretório reports/:
 
 reports/fake-store-api-qa-automation-report.html
 Abra este arquivo em qualquer navegador web para analisar os resultados detalhados dos testes, incluindo o status de cada requisição, tempos de resposta e quaisquer falhas de asserção.
@@ -145,4 +152,3 @@ Bash
 
 git push origin minha-nova-feature
 Abra um Pull Request no repositório original. Descreva detalhadamente as alterações feitas e por que elas são necessárias.
-
